@@ -12,6 +12,7 @@
 	<artifactId>netflix-eureka-naming-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>netflix-eureka-naming-server</name>
+	<packaging>jar</packaging>
 	<description>Demo project for Spring Boot netflix-eureka-naming-server</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -56,6 +57,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<classifier>exec</classifier>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
